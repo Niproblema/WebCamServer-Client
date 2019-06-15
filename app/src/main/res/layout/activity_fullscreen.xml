@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".foreground.MainActivity"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_surface"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SurfaceView
+            android:id="@+id/sv_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_controll_tab"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_capture"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_Capture" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
